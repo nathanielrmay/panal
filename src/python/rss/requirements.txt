@@ -1,0 +1,4 @@
+feedparser
+python-dateutil
+psycopg2-binary
+requests

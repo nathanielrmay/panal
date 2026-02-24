@@ -1,0 +1,15 @@
+ # Ignore everything by default
+ /*
+
+ # Whitelist source and documentation
+ !/src/
+ !/docs/
+
+ # Always include the gitignore itself
+ !.gitignore
+
+ # Re-ignore sensitive or temporary files inside whitelisted folders
+ # (Example: if you have .env or logs inside src)
+ **/__pycache__/
+ **/*.pyc
+ **/.env

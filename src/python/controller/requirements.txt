@@ -1,0 +1,1 @@
+-r ../rss/requirements.txt
