@@ -7,7 +7,6 @@
 # Allow src and docs folders
 !src/
 !docs/
-!.antigravity/
 
  # But specifically ignore the database config
 src/R/db_config.R
