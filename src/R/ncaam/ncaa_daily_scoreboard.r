@@ -9,10 +9,7 @@ library(jsonlite)
 # ==========================================
 TARGET_SCHEMA  <- "ncaamb"
 TARGET_TABLE   <- "ncaa_mbb_daily_scoreboard"
-DB_NAME        <- "panal"
-DB_USER        <- "than"
-DB_PASS        <- "fishy"
-DB_HOST        <- "localhost"
+source("../db_config.R")
 
 # NCAA source usually expects YYYY-MM-DD or specific format handled by hoopR
 SEARCH_DATE    <- "2026-01-23" 
@@ -62,3 +59,4 @@ tryCatch({
 
 dbDisconnect(con)
 print("Script Complete.")
+

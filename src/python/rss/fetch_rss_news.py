@@ -8,10 +8,10 @@ import time
 # ==========================================
 # CONFIGURATION
 # ==========================================
-DB_NAME = "panal"
-DB_USER = "than"
-DB_PASS = "fishy"
-DB_HOST = "localhost"
+import sys
+from pathlib import Path
+sys.path.append(str(Path(__file__).parent.parent))
+from db_config import DB_NAME, DB_USER, DB_PASS, DB_HOST
 DB_PORT = "5432"
 
 RSS_FEEDS = [

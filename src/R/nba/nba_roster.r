@@ -10,10 +10,7 @@ library(purrr)
 # ==========================================
 TARGET_SCHEMA  <- "nba"
 TARGET_TABLE   <- "nba_team_roster"
-DB_NAME        <- "panal"
-DB_USER        <- "than"
-DB_PASS        <- "fishy"
-DB_HOST        <- "localhost"
+source("../db_config.R")
 # SEASON       <- "2025-26" # Commented out to let hoopR use default
 
 # ==========================================
@@ -116,3 +113,4 @@ tryCatch({
 
 dbDisconnect(con)
 print("Script Complete.")
+

@@ -1,15 +1,17 @@
- # Ignore everything by default
- /*
+# Ignore everything
+*
 
- # Whitelist source and documentation
- !/src/
- !/docs/
+# Allow .gitignore
+!.gitignore
 
- # Always include the gitignore itself
- !.gitignore
+# Allow src and docs folders
+!src/
+!docs/
 
- # Re-ignore sensitive or temporary files inside whitelisted folders
- # (Example: if you have .env or logs inside src)
- **/__pycache__/
- **/*.pyc
- **/.env
+ # But specifically ignore the database config
+src/R/db_config.R
+src/python/db_config.py
+
+# Ignore other junk**/*.pyc
+**/__pycache__/
+**/.env

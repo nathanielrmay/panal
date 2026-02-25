@@ -9,10 +9,7 @@ library(jsonlite)
 # ==========================================
 TARGET_SCHEMA  <- "nba"
 TARGET_TABLE   <- "espn_nba_teams"
-DB_NAME        <- "panal"
-DB_USER        <- "than"
-DB_PASS        <- "fishy"
-DB_HOST        <- "localhost"
+source("../db_config.R")
 
 # ==========================================
 # 1. FETCH DATA
@@ -55,3 +52,4 @@ tryCatch({
 
 dbDisconnect(con)
 print("Script Complete.")
+

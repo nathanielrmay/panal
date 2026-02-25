@@ -10,10 +10,7 @@ library(jsonlite)
 TARGET_SCHEMA    <- "nba"
 TARGET_TABLE     <- "espn_nba_player_stats"
 SOURCE_TABLE     <- "espn_nba_player_box" # Source for athlete_ids
-DB_NAME          <- "panal"
-DB_USER          <- "than"
-DB_PASS          <- "fishy"
-DB_HOST          <- "localhost"
+source("../db_config.R")
 CURRENT_SEASON   <- 2026
 
 # ==========================================
@@ -94,3 +91,4 @@ for (i in 1:nrow(athletes_df)) {
 dbDisconnect(con)
 print("==========================================")
 print("Script Complete.")
+

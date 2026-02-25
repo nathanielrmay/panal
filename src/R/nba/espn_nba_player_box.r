@@ -10,10 +10,7 @@ library(jsonlite)
 TARGET_SCHEMA    <- "nba"
 TARGET_TABLE     <- "espn_nba_player_box"
 SOURCE_TABLE     <- "espn_nba_scoreboard"
-DB_NAME          <- "panal"
-DB_USER          <- "than"
-DB_PASS          <- "fishy"
-DB_HOST          <- "localhost"
+source("../db_config.R")
 SEASON_START_STR <- "2025-10-22"
 
 # ==========================================
@@ -112,3 +109,4 @@ for (i in 1:nrow(games_to_process)) {
 dbDisconnect(con)
 print("==========================================")
 print("Script Complete.")
+

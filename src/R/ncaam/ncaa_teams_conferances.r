@@ -11,10 +11,7 @@ library(jsonlite)
 TARGET_SCHEMA  <- "ncaamb"
 TEAMS_TABLE    <- "ncaa_teams"
 CONF_TABLE     <- "ncaa_conferences"
-DB_NAME        <- "panal"
-DB_USER        <- "than"
-DB_PASS        <- "fishy"
-DB_HOST        <- "localhost"
+source("../db_config.R")
 SEASON         <- 2025
 
 # ==========================================
@@ -108,3 +105,4 @@ tryCatch({
 
 dbDisconnect(con)
 print("SUCCESS: NCAA Teams and Conferences have been populated.")
+

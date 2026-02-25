@@ -10,10 +10,7 @@ library(jsonlite)
 TARGET_SCHEMA  <- "ncaamb"
 TARGET_TABLE   <- "hoopsr_player_box_scores"
 CURRENT_SEASON <- 2026
-DB_NAME        <- "panal"
-DB_USER        <- "than"
-DB_PASS        <- "fishy"  # Make sure to put your real password here
-DB_HOST        <- "localhost"
+source("../db_config.R")
 
 # ==========================================
 # 1. FETCH CURRENT SEASON DATA

@@ -9,10 +9,7 @@ library(jsonlite)
 # ==========================================
 TARGET_SCHEMA  <- "ncaamb"
 TARGET_TABLE   <- "espn_scoreboard"
-DB_NAME        <- "panal"
-DB_USER        <- "than"
-DB_PASS        <- "fishy"
-DB_HOST        <- "localhost"
+source("../db_config.R")
 
 # Date format YYYYMMDD
 SEARCH_DATE    <- "20260123" 
@@ -63,3 +60,4 @@ tryCatch({
 
 dbDisconnect(con)
 print("Script Complete.")
+
