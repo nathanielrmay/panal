@@ -16,3 +16,4 @@ src/python/db_config.py
 # Ignore other junk**/*.pyc
 **/__pycache__/
 **/.env
+.antigravity/
